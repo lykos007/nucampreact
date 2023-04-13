@@ -10,12 +10,14 @@ import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import { fetchCampsites } from './features/campsites/campsitesSlice';
+import { fetchPartners } from './features/partners/partnersSlice';
 
 function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchCampsites());  
+    dispatch(fetchCampsites());
+    dispatch(fetchPartners());  
   }, [dispatch]
   );
 

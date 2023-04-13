@@ -3,7 +3,7 @@ import { Col, Row } from 'reactstrap';
 import CampsiteCard from "./CampsiteCard";
 import { selectAllCampsites } from './campsitesSlice';
 import Error from '../../components/Error';
-import Loading from '../../components/Loading'
+import Loading from '../../components/Loading';
 
 
 const CampsitesList = () => {
