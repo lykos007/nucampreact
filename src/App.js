@@ -11,13 +11,15 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import { fetchCampsites } from './features/campsites/campsitesSlice';
 import { fetchPartners } from './features/partners/partnersSlice';
+import { fetchPromotions } from './features/promotions/promotionsSlice';
 
 function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchCampsites());
-    dispatch(fetchPartners());  
+    dispatch(fetchPartners()); 
+    dispatch(fetchPromotions());  
   }, [dispatch]
   );
 
